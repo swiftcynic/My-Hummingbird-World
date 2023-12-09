@@ -275,6 +275,7 @@ public class HummingbirdAgent : Agent
             if (inFrontOfFlower)
             {
                 // Pick a random flower
+                Debug.Assert(flowerArea.Flowers.Count > 0, "Cannot find flowers.");
                 Flower randomFlower = flowerArea.Flowers[UnityEngine.Random.Range(0, flowerArea.Flowers.Count)];
 
                 // Position 10 to 20 cm in front of the flower
